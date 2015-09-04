@@ -1,0 +1,98 @@
+
+#cmtool-dashboard #dashboard-left-panel
+{
+	float: left;
+	width: 33%;	
+}
+
+#cmtool-dashboard #account-info {
+	padding: 10px;
+	border: solid 1px black;
+	height: 75px;
+	margin: 5px;
+}
+
+#account-info #user-name
+{
+	margin: 10px;
+	font-size: 24px;
+	font-weight: 600;
+	
+}
+
+#account-info a.modlink
+{
+	position:relative;
+	bottom: -20px;
+	float: right;
+}
+
+
+#account-info #user-location
+{
+	margin: 15px;
+	font-size: 16px;
+}
+
+
+#cmtool-dashboard #date-time {
+	padding: 10px;
+	border: solid 1px black;
+	height: 100px;
+	margin: 5px;
+	font-size: 24px;
+}
+
+#cmtool-dashboard #user-favorites {
+	padding: 10px;
+	border: solid 1px black;
+	height: 250px;
+	margin: 5px;
+}
+
+#cmtool-dashboard #dashboard-right-panel
+{
+	float: right;
+	width: 67%;	
+}
+
+#cmtool-dashboard #curriculum-calendar {
+	padding: 10px;
+	border: solid 1px black;
+	height: 182px;
+	margin: 5px;
+}
+
+#cmtool-dashboard #cmtool-tabs {
+	border: solid 1px black;
+	height: 250px;
+	margin: 5px;
+	
+}
+
+#cmtool-dashboard #cmtool-tabs ul {
+	list-style: none;
+}
+
+#cmtool-dashboard #search-results {
+	overflow: auto;
+	height: 125px;
+}
+
+#cmtool-dashboard #curriculum-tab {
+	overflow: auto;
+	height: 150px;
+}
+
+.ui-corner-all { -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+
+.highlight_word { 
+	font-weight: bold; 
+	color: black; 
+	background-color: #ff5;
+}
+
+.jclock
+{
+	width: 100px;	
+}

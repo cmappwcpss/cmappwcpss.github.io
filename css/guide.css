@@ -1,0 +1,175 @@
+@CHARSET "ISO-8859-1";
+
+.scrolling-fieldset 
+{
+	background-color: #fff;
+}
+
+#guide-header
+{
+	width: 100%;
+	background-color: #900;	
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 2px;
+	text-align: center;
+}
+
+.guide-header-fixed {
+	left: 0px ;
+	position: fixed;
+	width: 100%;
+	top: 86px ;
+	z-index: 25;
+}
+
+
+table.course-guide-header-table {
+	width: 100%;	
+}
+
+table.course-guide-header-table td.course-title {
+	background-color: #900;	
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 2px;
+	text-align: center;
+}
+
+table.course-guide-header-table td.cg-header {
+	background-color: #ffffe6;
+	text-align: center;
+	font-weight: 700;
+}
+
+table.course-guide-table td.unit-title {
+	background-color: #E6E6E6;	
+	font-size: 14px;
+	font-weight: 700;
+	padding: 2px;
+	text-align: center;
+}
+
+table td.unit-col {
+	width: 14%;
+	vertical-align: middle;
+}
+
+table td.day-col {
+	width: 5%;
+}
+
+table td.obj-col {
+	width: 26%;
+}
+
+table td.ess-col {
+	width: 26%;
+}
+
+table td.key-col {
+	width: 25%;
+}
+
+
+table.course-guide-table {
+	width: 100%;	
+}
+
+table.navlink-tbl {
+	width: 100%;
+	background-color: #E6E6E6;		
+	/* display: none; */
+} 
+
+.obj-tbl {
+	/* this style is set via javascript (guide.js) */
+}
+
+div.course-guide-header-fixed {
+	position: fixed ;
+	/* width: 100%; */
+	top: 86px ;
+	z-index: 25;
+}
+
+.unit-title {
+	position: relative;
+	background-color: #E6E6E6;	
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 2px;
+	text-align: center;	
+}
+
+.guide-section-title {
+	position: relative;
+	background-color: #E6E6E6;	
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 2px;
+	margin-bottom: 10px;
+}
+
+.unit-toggle-btn {
+	position: absolute;
+	top: 2px;
+	background: url(../images/minus.png);
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 5px;
+	cursor: pointer;
+}
+
+#footer-action-bar {
+	position: fixed;
+	bottom: 0px;
+	background: #ccc;
+	height: 16px;
+	width: 100%; 
+	left: 0px;
+}
+
+.footer-img-hover {
+	width: 30px;
+	height: 30px;
+	margin-top: -14px;
+}
+
+.guide-nav-links {
+	background-color: #E6E6E6;	
+	border: 1px solid #ccc;
+	padding: 2px;
+	margin-bottom: 10px;
+	height: 18px;
+}
+
+.prev-guide-link {
+	position: relative;
+}
+
+.course-return-link {
+	position: relative;
+	left: 45%;
+	margin-top: -15px;
+}
+
+.next-guide-link {
+	position: relative;
+	left: 89%;
+	top: -15px;
+}
+
+#unit-select-container {
+	margin-left: 55%;
+	margin-top: -20px;
+	margin-bottom: 10px;
+	
+}
