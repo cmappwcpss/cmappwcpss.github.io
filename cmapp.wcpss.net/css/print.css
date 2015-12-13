@@ -1,0 +1,528 @@
+/**
+ * WCPSS Application Template Layout Stylesheet
+ * @version 2.0
+ */
+ 
+/* Show URL 
+a:link, a:visited {background: transparent; color:#333; text-decoration:none;}
+a:link[href^="http://"]:after, a[href^="http://"]:visited:after {content: " (" attr(href) ") "; font-size: 11px;}
+a[href^="http://"] {color:#000;}
+*/
+ 
+* {
+ margin: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	color: #111;
+	height: 100%;
+}
+img, table, td {
+	border: 0px none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+a {
+	text-decoration: none;
+}
+hr {
+	height: 1px;
+	background-color: #CCC;
+	border: 0px none;
+}
+#container ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-left: 2px;
+	line-height: 1.3em;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+#container ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+	margin-left: 2px;
+	line-height: 1.5em;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+#container ul ul, #container ol ol {
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+/* containers ////////////////////////////////////////////////////////////// */
+#container {
+	float: none;
+	clear: both;
+	margin-right: 15px;
+	margin-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+#content {
+	font-size: 80%;
+}
+#sidebar {
+	font-size: 0.8em;
+	width: 180px;
+	background: #F4F4F4;
+	border: 1px solid #CCCCCC;
+	margin-top: 1px;
+	margin-bottom: 15px;
+	padding: 5px;
+	margin-left: 15px;
+}
+#footer {
+	clear: both;
+	float: none;
+	font-size: 80%;
+	text-align: center;
+	color: #333333;
+	background: #F4F4F4;
+	border: 1px solid #CCCCCC;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+ 
+/* header ////////////////////////////////////////////////////////////////// */
+#header {
+	background: url('../images/header_bg.png') repeat-x;
+	height: 70px;
+	position: relative;
+	z-index:1;
+}
+#header ul, #subnav ul {
+	padding: 0px;
+	margin: 0px;
+}
+/* logo for screen */
+#header #logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 200px;
+	height: 51px;
+	background: url('../images/logo.gif') no-repeat 0px 0px;
+}
+/* logo for print */
+#header #logo img {
+	display: none;
+}
+#header ul {
+	padding: 0px;
+	margin: 0px;
+}
+#header #nav {
+	position: absolute;
+	white-space: nowrap;
+	overflow: hidden;
+	left: 240px;
+	top: 35px;
+	height: 35px;
+	background: url('../images/nav-border.png') no-repeat 0px 6px;
+	z-index:2;
+}
+#header #nav ul li {
+	display: inline;
+}
+#header #nav ul li.active a {
+	background: url('../images/bg-nav-active.png') repeat-x;
+	color: #264866;
+	font-weight: bold;
+}
+#header #nav ul li a {
+	float: left;
+	margin-top: 6px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	background: url('../images/nav-border.png') no-repeat bottom right;
+}
+#header #nav ul li a:hover {
+	background: url('../images/nav-border.png') repeat-x;
+}
+#header #nav ul li.active a:hover {
+	background: url('../images/bg-nav-active.png') repeat-x;
+}
+#subnav {
+	/*
+	border-bottom: solid 1px #CCC;
+	height: 23px;
+	background: #E4EDF5;
+	white-space: nowrap;
+	overflow: hidden;
+	*/
+	white-space: nowrap;
+	overflow: hidden;
+	height: 33px;
+	background: url('../images/header.png');
+}
+#subnav ul {
+	margin-left: 235px;
+}
+#subnav ul li {
+	float: left;
+	display: inline;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#subnav ul li a {
+	letter-spacing: 1px;
+	font-size: .7em;
+	color: #666;
+}
+#subnav ul li a:hover {
+	text-decoration: underline;
+}
+#subnav ul li.active a {
+	height: 19px;
+	color: #264866;
+	font-weight: bold;
+}
+#subnav ul li.active {
+	height: 19px;
+	background: url('../images/subnav-active.png') no-repeat center bottom;
+}
+
+/* content ///////////////////////////////////////////////////////////////// */
+#content h1 {
+	font-size: 1.8em;
+	margin-top: 10px;
+	margin-bottom: 9px;
+}
+#content h2 {
+	font-size: 1.4em;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+#content h3 {
+	font-size: 1.2em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#content fieldset {
+	padding: 10px;
+}
+#content dl dt {
+	font-weight: bold;
+}
+
+/* message boxes /////////////////////////////////////////////////////////// */
+#content div.message, #content div.confirm, #content div.warning {
+	background: #f5f5f5;
+	border: 1px solid #dbdbdb;
+	padding: 10px;
+	margin-bottom: 10px;
+	min-height: 43px;
+	overflow: visible;
+	display: block;
+} 
+#content div.confirm, #content div.message {
+	background: #DEEDE0 url('../images/check.gif') no-repeat 5px 5px;
+	border: 1px solid #BFDDC4;
+	padding-left: 70px;
+}
+#content div.warning {
+	background: #FFE6E6 url('../images/alert.gif') no-repeat 4px 2px;
+	border: 1px solid #FFC1C1;
+	padding-left: 70px;
+}
+
+/* tables ////////////////////////////////////////////////////////////////// */
+#content table {
+	 border: 1px solid #ccc; 
+}
+#content table thead {
+	background: #F4F4F4;
+	border-bottom: 1px solid #CCCCCC;
+}
+#content table thead th {
+	font-weight: bold;
+	text-align: center;
+	border-right: 1px solid #CCCCCC;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+#content table thead th.asc {
+	font-weight: bold;
+	text-align: center;
+	border-right: 1px solid #CCCCCC;
+	background: #E4EDF5 url('../images/bg-asc.gif') no-repeat center right;
+}
+#content table thead th.desc {
+	font-weight: bold;
+	text-align: center;
+	border-right: 1px solid #CCCCCC;
+	background: #E4EDF5 url('../images/bg-desc.gif') no-repeat center right;
+}
+#content table tbody tr.odd {
+	background: #F4F4F4;
+}
+#content table tbody tr td {
+	vertical-align: top;
+	border: 1px solid #CCCCCC;
+	padding: 3px 7px 2px 7px;
+}
+#content table tfoot tr td {
+	background: #E4EDF5;
+	text-align: center;
+	font-style: italic;
+	vertical-align: top;
+}
+
+
+td.unit-title {
+background-color:#E6E6E6;
+border-left:1px solid #CCCCCC;
+border-right:1px solid #CCCCCC;
+font-size:14px;
+font-weight:700;
+padding:2px;
+position:relative;
+text-align:center;
+}
+
+/* noborder tables */
+#content table.noborder, 
+#content table.noborder tbody tr td, 
+#content table.noborder thead tr td, 
+#content table thead tr th.noborder {
+	border-size: 0px;
+	border-color: transparent;
+}
+/* nested tables */
+#content table table thead th {
+	text-align: left;
+	border: 0px none;
+}
+#content table table thead th a {
+	font-weight: normal;
+}
+/* couter the padding in nest */
+#content table table.nested {
+	width: 100%;
+	margin: -3px -7px -2px -7px;
+}
+
+/* pagination ////////////////////////////////////////////////////////////// */
+#content div.pager {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#content div.pager a {
+	border: 1px solid #ccc;
+	background-color: #E4EDF5;
+	padding: 1px 4px 1px 4px;
+}
+#content div.pager a:hover {
+	background-color: #ccc;
+}
+#content div.pager a.active {
+	border-color: #555;
+	background-color: #ccc;
+	font-weight: bold;
+}
+#content div.pager a.active:hover {
+	background-color: #fff;
+}
+
+/* sidebar / help ////////////////////////////////////////////////////////// */
+#sidebar h1 {
+	font-size: 1em;
+	text-align: center;
+	width: 190px;
+	background: #E4EDF5;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	margin: -5px;
+	margin-top: 0px;
+	margin-bottom: 7px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+#sidebar p {
+	line-height: 1.5em;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+#sidebar ul {
+	list-style-position: outside;
+	list-style-type: square;
+	margin-left: 17px;
+}
+#sidebar ul li {
+	line-height: 1.2em;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/* fix and theme tiny mce ////////////////////////////////////////////////// */
+span.AMedit {
+	border: 1px solid #ff0000;
+}
+#content .mceEditor {
+	width: 100%;
+}
+#content .mceLayout {
+	height: auto !important;
+}
+#content .mceEditor .mceIframeContainer {
+	border: 1px solid #dbdbdb;
+}
+#content .mceEditor table {
+	border: 0px none;
+}
+#content .mceEditor table tr td {
+	padding: 0px;
+	border: 0px none;
+}
+#content .defaultSkin .mceToolbar {
+	height: auto;
+	padding: 1px;
+}
+#content .defaultSkin table.mceToolbar {
+	margin: 0px;
+}
+#content .defaultSkin .mceFirst table.mceToolbar {
+	float: left;
+}
+#content .defaultSkin table {
+	background-color: #E4EDF5;
+}
+#content .tinymce { /* make textarea readonly while tinymce loads */
+	display: none;
+}
+/* auto-iconized links & buttons /////////////////////////////////////////// */
+#content a.autoico {
+	font-size: 11px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+#content a.autoico img {
+	border: none;
+	margin-bottom: -4px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#content input.autobtn {
+	font-size: 11px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 0px none;
+	padding-left: 16px;
+}
+#content input.autobtn[type="submit"] {
+	font-weight: bold;
+}
+
+
+/* course guide specific /////////////////////////////////////////// */
+
+table td.unit-col {
+	width: 14%;
+	vertical-align: middle;
+}
+
+table td.day-col {
+	width: 5%;
+}
+
+table td.obj-col {
+	width: 26%;
+}
+
+table td.ess-col {
+	width: 26%;
+}
+
+table td.key-col {
+	width: 25%;
+}
+
+td.cg-cell {
+	font-size: 11px;
+}
+
+td.course-title {
+	background-color: #900;	
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 2px;
+	text-align: center;
+}
+
+td.cg-header {
+	background-color: #ffffe6;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 700;
+	height: 10px;
+}
+
+/* unit guide specific /////////////////////////////////////////// */
+#unit-title {
+	font-size: 1.8em;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#unit-subheader {
+	font-size: 1.4em;
+	margin-bottom: 9px;
+	text-align: center;
+}
+
+#guide-header
+{
+	width: 100%;
+	background-color: #900;	
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 2px;
+	text-align: center;
+}
+
+.guide-section-title {
+	position: relative;
+	background-color: #E6E6E6;	
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 2px;
+	margin-bottom: 10px;
+}
+
+/* instructional guide specific /////////////////////////////////////////// */
+#instruct-title {
+	font-size: 1.8em;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#instruct-subheader {
+	font-size: 1.4em;
+	margin-bottom: 9px;
+	text-align: center;
+}
